@@ -88,9 +88,9 @@ let serve = () => {
     /*
     testing
     */
-    watch(`main.js` ,series(validateJS, transpileJSForDev)).on(`change`, reload);
+    watch(`scripts/main.js` ,series(validateJS, transpileJSForDev)).on(`change`, reload);
 
-    watch(`main.css`,validateCSS).on(`change`, reload);
+    watch(`styles/main.css`,validateCSS).on(`change`, reload);
 
     watch(`index.html`,validateHTML).on(`change`, reload);
 
