@@ -1,12 +1,12 @@
 body {
   background-size: cover;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*menu 1 & menu 2*/
 nav {
   position: relative;
-  top: 120px;
+  top: 170px;
   display: flex;
   justify-content: center;
 }
@@ -34,7 +34,7 @@ ul {
 /* setting up the menus */
 nav ul li {
   width: 200px;
-  height: 50px;
+  height: 70px;
   background-color: darkgray;
   line-height: 2;
   text-align: center;
@@ -54,15 +54,13 @@ header {
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 30px;
-
 }
 
 header a {
-  text-align: center;
-  font-family: Arial;
-  line-height: 1.2;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.1;
   color: green;
-  font-size: 20px
+  font-size: 20px;
 }
 
 /* hovers over each box */
@@ -75,17 +73,12 @@ ul li ul li {
   display: none;
 }
 
- /* displays sub boxs */
+/* displays sub boxs */
 ul li:hover ul li {
   display: block;
 }
 
 /* hovers over sub box */
-ul li:hover>ul {
+ul li:hover ul {
   display: block;
 }
-
-
-
-
-
