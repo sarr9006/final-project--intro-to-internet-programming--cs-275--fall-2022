@@ -1,0 +1,59 @@
+body {
+  background-size: cover;
+  font-family: Arial;
+}
+
+nav {/*menu 1 & menu 2*/
+  position: relative;
+  top: 250px;
+  display: flex;
+  justify-content: center;
+}
+
+ul { /*Removing Format*/
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* setting up the menus */
+ul li {
+  align-items: right;
+  width: 200px;
+  height: 60px;
+  background-color: darkgray;
+  line-height: 0.9;
+  text-align: center;
+  font-size: 20px;
+}
+/* makes it a box*/
+ul li a {
+ text-decoration: none;
+ color:red;
+ display: block;
+}
+/* hovers over each box */
+ul li a:hover {
+  background-color: lightcoral;
+}
+
+  /* hides the sub menu */
+ul li ul li {
+  display: none;
+}
+/* hovers over sub box */
+ul li:hover > ul {
+    display: block;
+}
+/* displays sub boxs */
+ul li:hover ul li {
+  display: block;
+
+}
+
+h1 {
+  margin-top: auto;
+}
+
+
+
+
