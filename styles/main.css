@@ -90,7 +90,8 @@ ul li:hover ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-  z-index: 0;
+  z-index: 1;
+  display: none;
 }
 /* white modal */
 .modal-content-pane {
@@ -101,6 +102,19 @@ ul li:hover ul {
   right: 90px;
   width: 80%;
   height: 80%;
+  z-index: 2;
+  display: none;
   }
 
+.hidden {
+  display: none;
+}
+
+@media (max-width: 736px) {
+  nav ul {
+    flex-direction: column;
+    margin-right: auto;
+
+    }
+}
 
