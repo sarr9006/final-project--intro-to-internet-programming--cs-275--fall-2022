@@ -3,56 +3,88 @@ body {
   font-family: Arial;
 }
 
-nav {/*menu 1 & menu 2*/
+/*menu 1 & menu 2*/
+nav {
   position: relative;
-  top: 250px;
+  top: 120px;
   display: flex;
   justify-content: center;
 }
 
-ul { /*Removing Format*/
+/*menus horizontal*/
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+}
+
+/*Removing Format*/
+ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 /* setting up the menus */
-ul li {
-  align-items: right;
+nav ul li {
   width: 200px;
-  height: 60px;
+  height: 50px;
   background-color: darkgray;
-  line-height: 0.9;
+  line-height: 2;
   text-align: center;
   font-size: 20px;
 }
+
 /* makes it a box*/
-ul li a {
- text-decoration: none;
- color:red;
- display: block;
+nav ul li a {
+  text-decoration: none;
+  color: red;
+  display: block;
 }
+
+header {
+  background-color: aqua;
+  text-align: right;
+  padding-top: 40px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+
+}
+
+header a {
+  text-align: center;
+  font-family: Arial;
+  line-height: 1.2;
+  color: green;
+  font-size: 20px
+}
+
 /* hovers over each box */
 ul li a:hover {
   background-color: lightcoral;
 }
 
-  /* hides the sub menu */
+/* hides the sub menu */
 ul li ul li {
   display: none;
 }
-/* hovers over sub box */
-ul li:hover > ul {
-    display: block;
-}
-/* displays sub boxs */
+
+ /* displays sub boxs */
 ul li:hover ul li {
   display: block;
-
 }
 
-h1 {
-  margin-top: auto;
+/* hovers over sub box */
+ul li:hover>ul {
+  display: block;
 }
+
 
 
 
